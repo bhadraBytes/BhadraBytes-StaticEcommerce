@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Livum</title>
+    <link rel="stylesheet" href="/Css_Directory/trial2.css">
+    <link rel="stylesheet" href="/Css_Directory/text-uility.css">
+    <link rel="stylesheet" href="/Css_Directory/Responsive.css">
+    <link rel="stylesheet" href="/Css_Directory/shop.css">
+    <link rel="stylesheet" href="/Css_Directory/myProfile.css">
+    <link rel="stylesheet" href="/Css_Directory/blog.css">
+    <script src="https://kit.fontawesome.com/7f793b200d.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navBar">
+            <div class="main-logo">
+                <a href="index.html"><img src="/Assets/bhadrabytes-logo.png" alt=""></a>
+            </div>
+            <div class="searchBar">
+                <button class='searchclose'><i class="fas fa-times"></i></button>
+                <input type="search" name="" id="sBar" placeholder="Search Here">
+                <span id="sBtn"><i class="fa fa-search"></i></span>
+            </div>
+            <ul id="navlist">
+                <li><a class="navIcons" href="index.html"><i class="fa-solid fa-house"></i>Home</a></li>
+                <li><a class="navIcons" href="shop.html"><i class="fa-solid fa-shopping-bag "></i>Shop</a></li>
+                <li><a class="navIcons" href="blog.html"><i class="fa-solid fa-pen-to-square "></i>Blog</a></li>
+                <li><a class="navIcons" href="about.html"><i class="fa-solid fa-regular fa-people-roof "></i>About</a>
+                </li>
+                <li><a class="navIcons" href="contact.html"><i class="fa-solid fa-envelope "></i>Contact</a></li>
+                <!-- <li><a href="#">My Profile</a></li> -->
+                <!-- <div class="dropdown">
+                    <button class="dropbtn"><i class="fa-solid fa-user navIcons"></i>Account
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="myProfile.html"><i class="fa fa-user"></i>My Profile</a>
+                        <a href="myOrders.html"><i class="fa fa-cart-flatbed-suitcase"></i>Orders</a>
+                        <a href="myWishlist.html"><i class="fa fa-heart"></i>WishList</a>
+                        <a href="myCoupons"><i class="fa fa-ticket"></i>Coupons</a>
+                        <a href="Notifications.html"><i class="fa fa-bell"></i>Notifications</a>
+                        <a href="#"><i class="fa fa-right-from-bracket"></i>Logout</a>
+                    </div>
+                </div> -->
+                <li id="lg-cart"><a class="navCart" href="/cart.html"><i class="fa fa-shopping-cart"></i>Cart</a></li>
+                <a href="#" id="close"><i class="fa-sharp fa-solid fa-xmark"></i></a>
+            </ul>
+            <div id="mobile">
+                <a class="mobile-cart" href="/cart.html"><i class="fa fa-shopping-cart navCart"></i></a>
+                <i id="bar" class="fas fa-outdent"></i>
+            </div>
+        </nav>
+
+        <section id="main">
+            <div class="profile-container">
+                <section id="right">
+                    <div class="hello">
+                        <h4><i class="fa fa-user"></i>Hello</h4>
+                    </div>
+                    <div class="profile-selection">
+                        <ul class="select-list">
+                            <li><a href="#"><i class="fa fa-box"></i>My Orders<span><i
+                                            class="fa-solid fa-chevron-right"></i></span></a></li>
+                        </ul>
+                        <ul class="acSettings">
+                            <div class="Text">
+                                <h4><i class="fa fa-user"></i>Account Settings</h4>
+                            </div>
+                            <li><a class="" href="">Profile Information</a></li>
+                            <li><a href="">Manage Addresses</a></li>
+                        </ul>
+                        <ul class="payments-Section">
+                            <div class="Text">
+                                <h4><i class="fa fa-wallet"></i>Payments</h4>
+                            </div>
+                            <li><a href="">Gift Cards</a></li>
+                            <li><a href="">Saved UPI</a></li>
+                            <li><a href="">Saved Cards</a></li>
+                        </ul>
+                        <ul class="my-Stuff">
+                            <div class="Text">
+                                <h4><i class="fa fa-wallet"></i>My Stuff</h4>
+                            </div>
+                            <li><a href="">My Coupons</a></li>
+                            <li><a href="">My Review & Ratings</a></li>
+                            <li><a href="">All Notifications</a></li>
+                            <li><a href="">My WishList</a></li>
+                        </ul>
+                        <ul class="select-list">
+                            <li><a href="#"><i class="fa fa-power-off"></i>Logout</a></li>
+                        </ul>
+                    </div>
+                </section>
+                <section id="left">
+                    <div class="Info">
+                        <div class="flex-box">
+                            <div class="personal-info">
+                                <h4>Personal Information</h4>
+                                <span>Edit</span>
+                            </div>
+                        </div>
+                        <form action="">
+                            <div class="p-row">
+                                <div class="f-name">
+                                    <input type="text" name="" id="" placeholder="First Name" required>
+                                </div>
+                                <div class="l-name">
+                                    <input type="text" name="" id="" placeholder="Last Name" required>
+                                </div>
+                                <div class="saveBtn">
+                                    <input type="button" name="" id="" value="Save" required>
+                                </div>
+                            </div>
+                            <div class="gender-Section">
+                                <div class="GenderTxt">
+                                    <h4>Your Gender</h4>
+                                </div>
+                                <div class="genderInput">
+                                    <label>
+                                        <input type="radio" name="gender" value="male">
+                                        <span>Male</span>
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="gender" value="female">
+                                        <span>Female</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </form>
+                        <div class="flex-box">
+                            <div class="email-section">
+                                <h4>Email Address</h4>
+                                <span>Edit</span>
+                            </div>
+                        </div>
+                        <form action="">
+                            <div class="p-row">
+                                <div class="Type-Email">
+                                    <input type="email" name="" id="" placeholder="First Name" required>
+                                </div>
+                                <div class="saveBtn">
+                                    <input type="button" name="" id="" value="Save" required>
+                                </div>
+                            </div>
+                        </form>
+
+                        <div class="flex-box">
+                            <div class="mobNo-section">
+                                <h4>Mobile Number</h4>
+                                <span>Edit</span>
+                            </div>
+                        </div>
+                        <form action="">
+                            <div class="p-row">
+                                <div class="mobileNo">
+                                    <input type="tel" name="" id="" placeholder="First Name" required>
+                                </div>
+                                <div class="saveBtn">
+                                    <input type="button" name="" id="" value="Save" required>
+                                </div>
+                            </div>
+                        </form>
+
+                        <div class="FAQs">
+                            <h4>FAQs</h4>
+                            <h6>What happens when I update my email address (or mobile number)?</h6>
+                            <p>Your login email id (or mobile number) changes, likewise. You'll receive all your account related communication on your updated email address (or mobile number).</p>
+                            <h6>When will my Flipkart account be updated with the new email address (or mobile number)?</h6>
+                            <p>It happens as soon as you confirm the verification code sent to your email (or mobile) and save the changes.</p>
+                            <h6>What happens to my existing Flipkart account when I update my email address (or mobile number)?
+                            </h6>
+                            <p>Updating your email address (or mobile number) doesn't invalidate your account. Your account remains fully functional. You'll continue seeing your Order history, saved information and personal details.</p>
+                            <h6>Does my Seller account get affected when I update my email address?
+                            </h6>
+                            <p>Flipkart has a 'single sign-on' policy. Any changes will reflect in your Seller account also.
+                            </p>
+                            <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, nemo?</h6>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa numquam sapiente unde cum, minus molestiae totam! Quas odit, repudiandae quidem sapiente laboriosam perferendis obcaecati vitae nihil saepe quisquam. Eaque, repellat libero eum dolor praesentium eius a dignissimos quos nulla reprehenderit enim neque quod? Possimus, eveniet omnis, ab sed repudiandae blanditiis nisi natus voluptatum ipsum hic temporibus tenetur autem error nam magni aspernatur? Doloremque voluptate fuga maxime et dolore, error eligendi ipsa debitis beatae eos sed harum optio nemo illum sunt quasi vitae quos amet nesciunt blanditiis alias? Nisi odit recusandae quibusdam perferendis. Alias quaerat, consectetur dolor ad nisi ipsum modi assumenda earum nemo itaque repellendus fuga maiores. Veritatis ipsum rerum dignissimos sequi velit molestias ex aliquid earum ratione nobis esse tempora corrupti, commodi inventore libero culpa necessitatibus? Est laudantium aut quidem illum molestiae quo reiciendis nisi quibusdam autem, non fugit cum neque. Sed itaque aliquam enim molestiae sapiente, vero voluptate.</p>
+                        </div>
+
+                        <div class="deactivateBtn">
+                            <a href="">Deactivate Account</a>
+                        </div>
+
+                    </div>
+                </section>
+            </div>
+        </section>
+    </div>
+
+    <footer class="section-p1">
+        <div class="col">
+            <!-- <img class="logo footer-logo" src="/Assets/bhadrabytes-logo.png" alt=""> -->
+            <h4>Contact</h4>
+            <p><strong>Address:</strong> Mumbai 400037, Fashion Street, India</p>
+            <p><strong>Phone:</strong> +91 XXXX-XXX-XXX</p>
+            <p><strong>E-mail:</strong> livinumofficial@gmail.com</p>
+            <div class="follow">
+                <h4>Follow Us</h4>
+                <div class="icon-list">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <h4>About</h4>
+            <a href="#">About</a>
+            <a href="#">Delivery Information</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Condition</a>
+            <a href="#">Contact Us</a>
+        </div>
+
+        <div class="col">
+            <h4>My Account</h4>
+            <a href="#">Login</a>
+            <a href="#">View Cart</a>
+            <a href="#">My WishList</a>
+            <a href="#">Track My Order</a>
+            <a href="#">Help</a>
+        </div>
+
+        <div class="col install">
+            <h4>Install App</h4>
+            <p>From Apple Store Or Play Store</p>
+            <div class="row">
+                <img src="/Assets/pay/app.jpg" alt="">
+                <img src="/Assets/pay/play.jpg" alt="">
+            </div>
+            <p>Secure Payment Gateways</p>
+            <img src="/Assets/pay/pay.png" alt="">
+        </div>
+
+        <div class="copyright">
+            <p>&#169 2023,All Rights Are Reserved</p>
+        </div>
+    </footer>
+
+    <script src="/Js_Directory/script.js"></script>
+</body>
+
+</html>

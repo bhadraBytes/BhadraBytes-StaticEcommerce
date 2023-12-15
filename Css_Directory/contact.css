@@ -1,0 +1,441 @@
+#contact-details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#contact-details .details {
+    width: 40%;
+}
+
+#contact-details .details span {
+    font-size: 18px;
+}
+
+#contact-details .details h2 {
+    font-size: 26px;
+    line-height: 35px;
+    padding: 20px 0;
+}
+
+#contact-details .details h3 {
+    font-size: 16px;
+    padding-bottom: 15px;
+}
+
+#contact-details .details li {
+    list-style: none;
+    display: flex;
+    padding: 10px 0;
+}
+
+#contact-details .details li i {
+    font-size: 14px;
+    padding-right: 22px;
+}
+
+#contact-details .details li p {
+    font-size: 18px;
+    margin: 0;
+}
+
+#contact-details .map {
+    width: 55%;
+    height: 400px;
+}
+
+#contact-details .map iframe {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* #contact-form form {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 20px;
+}
+
+#contact-form form input,
+textarea {
+    display: flex;
+    width: 60%;
+    outline: none;
+    font-size: 14px;
+    row-gap: 10rem;
+    border: 1px solid #000;
+    border-radius: 3px;
+    padding: 12px 15px;
+}
+
+#contact-form form button {
+    font-size: 14px;
+    padding: 14px;
+    outline: none;
+    border: 1px solid #088178;
+    border-radius: 6px;
+    width: 15%;
+    cursor: pointer;
+}
+
+#contact-form form button:hover{
+    color: #fff;
+    background: #088178;
+} */
+
+
+
+
+
+/* NEW CONTACT  */
+
+
+.contact form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.contact form label {
+    display: block;
+    color: #121212;
+}
+
+.contact form p {
+    margin: 0;
+}
+
+.contact form .full {
+    grid-column: 1 / 3;
+}
+
+.contact form button,
+.contact form input,
+.contact form textarea {
+    font-size: 14px;
+    width: 100%;
+    padding: 1em;
+    border: 1px solid #c1c1c1;
+}
+
+.contact form button {
+    background: #c9e6ff;
+    border: 0;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.contact form button:hover,
+.contact form button:focus {
+    background: #92bde7;
+    color: #fff;
+    outline: 0;
+    transition: background-color 2s ease-out;
+}
+
+.alert {
+    text-align: center;
+    padding: 10px;
+    background: #79c879;
+    color: #fff;
+    margin-bottom: 10px;
+    display: none;
+}
+
+/* LARGE SCREENS */
+@media(min-width:700px) {
+    .wrapper {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
+
+    .wrapper>* {
+        padding: 2em;
+    }
+
+    .company-info h3,
+    .company-info ul,
+    .brand {
+        text-align: left;
+    }
+}
+
+
+/* WRAP CONTAINER CLASS */
+
+/* .wrapper{
+  
+} */
+
+.company-info {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.contact-span {
+    font-size: 24px;
+    color: lightcoral;
+    font-weight: 800;
+    margin-bottom: 25px;
+}
+
+/* Contact Form Animation Text  */
+
+#contact-container .company-info h2 {
+    /* font-size: 36px;
+    margin: 20px; */
+    font-family: arial;
+    /* display: inline-block; */
+    margin: 20px;
+    font-weight: 900;
+    /* text-transform: uppercase; */
+    text-align: center;
+    font-size: 30px;
+    line-height: 120%;
+    animation: background 20s linear infinite;
+    
+    background: linear-gradient(90deg, rgba(150,48,30,1) 0%,rgba(199,201,88,1) 10%,rgba(28,147,46,1) 20%,rgba(74,165,168,1) 30%,rgba(89,90,165,1) 40%,rgba(84,16,67,1) 50%,rgba(28,58,63,1) 60%,rgba(82,175,183,1) 70%,rgba(78,170,76,1) 80%,rgba(150,48,30,1) 90%,rgba(199,201,88,1) 100%);
+    background-size: 1000% 100%;
+    
+    -webkit-background-clip: text;
+    
+    -webkit-text-fill-color: transparent;
+    
+}
+
+#contact-container .company-info .span2:nth-child(1) {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 85%;
+    text-indent: -0.33em;
+  }
+  #contact-container .company-info .span2:nth-child(2) {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 69%;
+    word-spacing: -0.2em;
+    text-indent: -0.07em;
+  }
+  
+  @keyframes background {
+    0%{background-position:0% 50%}
+    100%{background-position:100% 50%}
+  }
+
+
+/* .wrapper{
+    box-shadow: 0 0 20px 0 rgba(72,94,116,0.7);
+  } */
+
+.wrapper>* {
+    padding: 1em;
+}
+
+/* .company-info {
+    background: #c9e6ff;
+} */
+
+.company-info h3,
+.company-info ul {
+    text-align: center;
+    margin: 0 0 1rem 0;
+}
+
+/* .contact {
+    background: #f9feff;
+} */
+
+
+  /* 2nd heart animation  */
+
+  #heart {
+    position: relative;
+    width: 100px;
+    height: 90px;
+    animation: heartbeat 1s infinite;
+    margin:0 auto
+}
+#heart:before,
+#heart:after {
+    position: absolute;
+    content: "";
+    left: 50px;
+    top: 0;
+    width: 50px;
+    height: 80px;
+    background: #121212;
+    -moz-border-radius: 50px 50px 0 0;
+    border-radius: 50px 50px 0 0;
+    -webkit-transform: rotate(-45deg);
+       -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+         -o-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    -webkit-transform-origin: 0 100%;
+       -moz-transform-origin: 0 100%;
+        -ms-transform-origin: 0 100%;
+         -o-transform-origin: 0 100%;
+            transform-origin: 0 100%;
+}
+#heart:after {
+    left: 0;
+    -webkit-transform: rotate(45deg);
+       -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+         -o-transform: rotate(45deg);
+            transform: rotate(45deg);
+    -webkit-transform-origin: 100% 100%;
+       -moz-transform-origin: 100% 100%;
+        -ms-transform-origin: 100% 100%;
+         -o-transform-origin: 100% 100%;
+            transform-origin :100% 100%;
+}
+
+
+
+@keyframes heartbeat{
+  0%
+  {
+    transform: scale( .75 );
+  }
+  20%
+  {
+    transform: scale( 1 );
+  }
+  40%
+  {
+    transform: scale( .75 );
+  }
+  60%
+  {
+    transform: scale( 1 );
+  }
+  80%
+  {
+    transform: scale( .75 );
+  }
+  100%
+  {
+    transform: scale( .75 );
+  }
+
+}
+
+
+/* heart animation  */
+
+.contactheart {
+    animation-name: heartbeat;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    background-color: red;
+    display: inline-block;
+    height: 50px;
+    margin: 0 10px;
+    position: relative;
+    top: 0;
+    transform: rotate(-45deg);
+    position: absolute; 
+    right: 40%; top: 19%;
+    width: 50px;
+
+  }
+  
+  .contactheart:before,
+  .contactheart:after {
+    content: "";
+    background-color: red;
+    border-radius: 50%;
+    height: 50px;
+    position: absolute;
+    width: 50px;
+  }
+  
+  .contactheart:before {
+    top: -25px;
+    left: 0;
+  }
+  
+  .contactheart:after {
+    left: 25px;
+    top: 0;
+  }
+  
+  /* this animation will be showing heart in 90 degree */
+  @keyframes heartbea
+  {
+    0%
+    {
+      transform: scale( 1 )
+        rotate(-45deg);    
+    }
+    20%
+    {
+      transform: scale( 1.25 )
+        rotate(-45deg);  
+    }
+     40%
+    {
+      transform: scale( 1.5 )
+        rotate(-45deg);
+    }
+  }
+
+  /* this animation will be running  */
+
+  @keyframes heartbeat{
+    0%
+    {
+      transform: scale( .75 );
+    }
+    20%
+    {
+      transform: scale( 1 );
+    }
+    40%
+    {
+      transform: scale( .75 );
+    }
+    60%
+    {
+      transform: scale( 1 );
+    }
+    80%
+    {
+      transform: scale( .75 );
+    }
+    100%
+    {
+      transform: scale( .75 );
+    }
+  
+  }
+
+/* Mobile Screen Responsive */
+
+@media (max-width: 477px) {
+    #contact-details {
+        display: flex;
+        padding: 30px;
+        flex-direction: column;
+    }
+
+    #contact-details .details {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    #contact-details .map {
+        width: 100%;
+        height: 400px;
+    }
+
+    .contactheart{
+      display: none;
+    }
+}

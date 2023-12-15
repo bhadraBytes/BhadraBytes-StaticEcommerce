@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'League Spartan', sans-serif;
+}
+
+
+body {
+  width: 100%;
+}
+
+/* Web Logo  */
+.main-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.main-logo img {
+  max-width: 250px; /* Set a maximum width */
+  width: 100%;
+  height: auto; /* Maintain aspect ratio */
+}
+
+
+/* Cart Icon Adjustment */
+
+/* .navCart{
+    font-size: 22px;
+} */
+
+h1 {
+  font-size: 50px;
+  line-height: 64px;
+  color: #222;
+}
+
+h2 {
+  font-size: 46px;
+  line-height: 54px;
+  color: #222;
+}
+
+h4 {
+  font-size: 20px;
+  color: #222;
+}
+
+h6 {
+  font-weight: 700;
+  font-size: 16px;
+  color: #222;
+}
+
+p {
+  font-size: 18px;
+  color: #465b52;
+  margin: 15px 0 20px 0;
+}
+
+.section-p1 {
+  padding: 40px 80px;
+}
+
+.section-m1 {
+  margin: 40px 0;
+}
+
+/* Global Button  */
+
+button.normal {
+  font-size: 14px;
+  font-weight: 600;
+  padding: 15px 30px;
+  color: #000;
+  background-color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: 0.2s;
+}
+
+button.Promotion {
+  font-size: 14px;
+  font-weight: 600;
+  padding: 15px 30px;
+  color: #fff;
+  background-color: transparent;
+  border-radius: 4px;
+  border: 1px solid #fff;
+  cursor: pointer;
+  outline: none;
+  transition: 0.6s;
+}
+
+/* Footer Logo  */
+/* 
+footer .footer-logo{
+    display: flex;
+    height: 100%;
+    width: 50%;
+} */
+
+
+.col a {
+  font-size: 16px;
+}
+
+
+@media (max-width: 477px) {
+
+  .section-p1 {
+    padding: 30px;
+  }
+
+  #product1 {
+    padding: 30px;
+  }
+}
+
+
+@media (max-width: 477px) {
+  #content .shopheart{
+    display: none;
+  }
+  .aboutheart{
+    display: none;
+  }
+  #content .blogheart{
+    display: none;
+  }
+  #content .aboutheart{
+    display: none;
+  }
+}

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Livum</title>
+    <link rel="stylesheet" href="/Css_Directory/trial2.css">
+    <link rel="stylesheet" href="/Css_Directory/text-uility.css">
+    <link rel="stylesheet" href="/Css_Directory/Responsive.css">
+    <link rel="stylesheet" href="/Css_Directory/shop.css">
+    <link rel="stylesheet" href="/Css_Directory/about.css">
+    <link rel="stylesheet" href="/Css_Directory/contact.css">
+    <link rel="stylesheet" href="/Css_Directory/cart.css">
+    <link rel="stylesheet" href="/Css_Directory/blog.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://kit.fontawesome.com/7f793b200d.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navBar">
+            <div class="main-logo">
+                <a href="index.html"><img src="/Assets/bhadrabytes-logo.png" alt=""></a>
+            </div>
+            <div class="searchBar">
+                <button class='searchclose'><i class="fas fa-times"></i></button>
+                <input type="search" name="" id="sBar" placeholder="Search Here">
+                <span id="sBtn"><i class="fa fa-search"></i></span>
+            </div>
+            <ul id="navlist">
+                <li><a class="navIcons" href="index.html"><i class="fa-solid fa-house"></i>Home</a></li>
+                <li><a class="navIcons" href="shop.html"><i class="fa-solid fa-shopping-bag "></i>Shop</a></li>
+                <li><a class="navIcons" href="blog.html"><i class="fa-solid fa-pen-to-square "></i>Blog</a></li>
+                <li><a class="navIcons" href="about.html"><i class="fa-solid fa-regular fa-people-roof "></i>About</a></li>
+                <li><a class="navIcons" href="contact.html"><i class="fa-solid fa-envelope "></i>Contact</a></li>
+                <!-- <li><a href="#">My Profile</a></li> -->
+                <!-- <div class="dropdown">
+                    <button class="dropbtn"><i class="fa-solid fa-user navIcons"></i>Account
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="myProfile.html"><i class="fa fa-user"></i>My Profile</a>
+                        <a href="myOrders.html"><i class="fa fa-cart-flatbed-suitcase"></i>Orders</a>
+                        <a href="myWishlist.html"><i class="fa fa-heart"></i>WishList</a>
+                        <a href="myCoupons"><i class="fa fa-ticket"></i>Coupons</a>
+                        <a href="Notifications.html"><i class="fa fa-bell"></i>Notifications</a>
+                        <a href="#"><i class="fa fa-right-from-bracket"></i>Logout</a>
+                    </div>
+                </div> -->
+                <li id="lg-cart"><a class="active navCart" href="/cart.html"><i class="fa fa-shopping-cart"></i>Cart</a></li>
+                <a href="#" id="close"><i class="fa-sharp fa-solid fa-xmark"></i></a>
+            </ul>
+            <div id="mobile">
+                <a class="mobile-cart" href="/cart.html"><i class="fa fa-shopping-cart navCart"></i></a>
+                <i id="bar" class="fas fa-outdent"></i>
+            </div>
+        </nav>
+
+        <section id="content" class="about-header">
+            <div class="heart"></div>
+            <h2>#LetsTalk</h2>
+            <p>Leave A Message, we love to hear from you!</p>
+        </section>
+
+        <section id="cart" class="section-p1">
+            <table width="100%">
+                <thead>
+                    <tr>
+                        <td>Remove</td>
+                        <td>Image</td>
+                        <td>Product</td>
+                        <td>Price</td>
+                        <td>Quantity</td>
+                        <td>Subtotal</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><a href="#"><i class="far fa-times-circle"></i></a></td>
+                        <td><img src="/Assets/products/f1.jpg" alt=""></td>
+                        <td>Cartoon Indian T-Shirts</td>
+                        <td>₹7500</td>
+                        <td><input type="number" name="" id="" value="2"></td>
+                        <td>₹7500</td>
+                    </tr>
+                    <tr>
+                        <td><a href="#"><i class="far fa-times-circle"></i></a></td>
+                        <td><img src="/Assets/products/f2.jpg" alt=""></td>
+                        <td>Typical Indian Wear</td>
+                        <td>₹1500</td>
+                        <td><input type="number" name="" id="" value="1"></td>
+                        <td>₹1500</td>
+                    </tr>
+                    <tr>
+                        <td><a href="#"><i class="far fa-times-circle"></i></a></td>
+                        <td><img src="/Assets/products/f3.jpg" alt=""></td>
+                        <td>Indian Shirts</td>
+                        <td>₹8100</td>
+                        <td><input type="number" name="" id="" value="2"></td>
+                        <td>₹8100</td>
+                    </tr>
+                    <tr>
+                        <td><a href="#"><i class="far fa-times-circle"></i></a></td>
+                        <td><img src="/Assets/products/f4.jpg" alt=""></td>
+                        <td>Indian Fashion</td>
+                        <td>₹999</td>
+                        <td><input type="number" name="" id="" value="1"></td>
+                        <td>₹999</td>
+                    </tr>
+                    <tr>
+                        <td><a href="#"><i class="far fa-times-circle"></i></a></td>
+                        <td><img src="/Assets/products/f5.jpg" alt=""></td>
+                        <td>Axolo T-Shirts</td>
+                        <td>₹4999</td>
+                        <td><input type="number" name="" id="" value="4"></td>
+                        <td>₹4999</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="cart-add" class="section-p1">
+            <div id="coupon">
+                <h3>Apply Coupon</h3>
+                <input type="text" name="" id="" placeholder="Enter your Coupon">
+                <button class="normal">Apply</button>
+            </div>
+            <div id="subtotal">
+                <h3>Cart Total</h3>
+                <table>
+                    <tr>
+                        <td>Cart Subtotal</td>
+                        <td>₹ 2198</td>
+                    </tr>
+                    <tr>
+                        <td>Shipping</td>
+                        <td>Free</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Total</strong></td>
+                        <td><strong>₹ 2198</strong></td>
+
+                    </tr>
+                </table>
+                <button class="normal">CheckOut</button>
+            </div>
+        </section>
+
+        <footer class="section-p1">
+            <div class="col">
+                <!-- <img class="logo footer-logo" src="/Assets/bhadrabytes-logo.png" alt=""> -->
+                <h4>Contact</h4>
+                <p><strong>Address:</strong> Mumbai 400037, Fashion Street, India</p>
+                <p><strong>Phone:</strong> +91 XXXX-XXX-XXX</p>
+                <p><strong>E-mail:</strong> livinumofficial@gmail.com</p>
+                <div class="follow">
+                    <h4>Follow Us</h4>
+                    <div class="icon-list">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-youtube"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <h4>About</h4>
+                <a href="#">About</a>
+                <a href="#">Delivery Information</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms & Condition</a>
+                <a href="#">Contact Us</a>
+            </div>
+
+            <div class="col">
+                <h4>My Account</h4>
+                <a href="#">Login</a>
+                <a href="#">View Cart</a>
+                <a href="#">My WishList</a>
+                <a href="#">Track My Order</a>
+                <a href="#">Help</a>
+            </div>
+
+            <div class="col install">
+                <h4>Install App</h4>
+                <p>From Apple Store Or Play Store</p>
+                <div class="row">
+                    <img src="/Assets/pay/app.jpg" alt="">
+                    <img src="/Assets/pay/play.jpg" alt="">
+                </div>
+                <p>Secure Payment Gateways</p>
+                <img src="/Assets/pay/pay.png" alt="">
+            </div>
+
+            <div class="copyright">
+                <p>&#169 2023,All Rights Are Reserved</p>
+            </div>
+        </footer>
+
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+    <script src="/Js_Directory/contact-base.js"></script>
+    <script src="/Js_Directory/script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+
+        });
+    </script>
+</body>
+
+</html>
